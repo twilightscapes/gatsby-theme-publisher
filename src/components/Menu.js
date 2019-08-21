@@ -18,7 +18,7 @@ const MENU_QUERY = graphql`
 
   query GET_MENU_ITEMS {
     wpgraphql {
-      menuItems(where: { location: menu-1 }) {
+      menuItems(where: { location: menu_1 }) {
         nodes {
           ...MenuFields
           childItems {
