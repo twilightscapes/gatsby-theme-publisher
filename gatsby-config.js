@@ -52,11 +52,11 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: config.mailChimpEndpoint,
-      },
-    },
+//     {
+//       resolve: "gatsby-plugin-mailchimp",
+//       options: {
+//         endpoint: config.mailChimpEndpoint,
+//       },
+//     },
   ],
 }
