@@ -9,7 +9,7 @@ const config = {
   description: `Scott Bolinger`,
   author: `Scott Bolinger`,
   twitter: `scottbolinger`,
-  wordPressUrl: `https://twilightscapes.com`,
+  wordPressUrl: `https://urbanfetish.com`,
   siteUrl: `https://scottbolinger.com`,
   dynamicComments: true,
   gaTrackingId: '',
