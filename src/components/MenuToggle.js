@@ -7,8 +7,10 @@ const MenuToggle = ({ onClick }) => (
     aria-expanded="false"
     onClick={onClick}
   >
+
     <span className="screen-reader-text">Menu</span>
   </button>
+  
 );
 
 export default MenuToggle;

@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
 
+
 const SinglePage = props => {
   const {
     pageContext: { id, postId, title, content, excerpt },

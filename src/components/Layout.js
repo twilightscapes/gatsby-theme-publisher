@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 // import "../css/tailwind-customizations.css"
 import "../css/index.scss"
 
+
 const Layout = ({ children }) => (
   <section id="root">
     <Header />
@@ -20,3 +21,8 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+
+
+// -> document.body.className === "helloworld"
+

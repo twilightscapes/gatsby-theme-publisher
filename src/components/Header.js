@@ -20,7 +20,7 @@ const Header = () => {
                       <input className="rounded-lg bg-gray-200 p-4 h-8" type="text" />
                     </div> */}
             
-              <div className="mainmenu"><Menu /></div>
+              <div className="mainmenu"><Menu /><span style={{color:'#fff'}}>MENU</span></div>
 
     </header>
     
