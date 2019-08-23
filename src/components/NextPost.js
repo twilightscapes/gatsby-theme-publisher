@@ -35,11 +35,7 @@ const NextPost = ({ post }) => (
         <div className="flex items-center justify-end relative w-3/4">
           {nextPost && nextPost.featuredImage && (
             <div className="thumbnail mr-2">
-              <img
-                src={nextPost.featuredImage.sourceUrl}
-                alt={nextPost.title}
-                className="next-post-featured-image block w-12 mr-2"
-              />
+              
             </div>
           )}
 

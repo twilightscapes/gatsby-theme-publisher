@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../../components/Layout';
+import LayoutFull from '../../components/LayoutFull';
 import PostEntryMeta from '../../components/PostEntryMeta';
 import PostEntryTitle from '../../components/PostEntryTitle';
 import PostEntryMedia from '../../components/PostEntryMedia';
@@ -39,7 +39,8 @@ const renderTerms = (categoryNodes = [], tagNodes = []) => (
 
 const Post = ({ pageContext: post }) => {
   return (
-    <Layout>
+    <LayoutFull>
+    {post.featuredImage && <PostEntryMedia post={post} location="single" classes="mb-20" />}
       <SEO title={`${post.title}`} />
       <div className="post-wrapper single-post">
         <header className="entry-header max-w-2xl m-auto mb-6 mt-8">
@@ -51,7 +52,7 @@ const Post = ({ pageContext: post }) => {
 
           <PostEntryMeta post={post} />
         </header>
-        {post.featuredImage && <PostEntryMedia post={post} location="single" classes="mb-20" />}
+        
 
         <div
           className="entry-content max-w-2xl m-auto"
@@ -74,7 +75,7 @@ const Post = ({ pageContext: post }) => {
 
       </div>
       
-    </Layout>
+    </LayoutFull>
   );
 };
 
