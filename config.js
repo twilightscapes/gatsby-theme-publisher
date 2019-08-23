@@ -6,11 +6,11 @@
  */
 const config = {
   title: `Scott Bolinger`,
-  description: `Scott Bolinger`,
-  author: `Scott Bolinger`,
-  twitter: `scottbolinger`,
+  description: `Urban Fetish`,
+  author: `Scott Urban Fetish`,
+  twitter: `toddlambert`,
   wordPressUrl: `https://urbanfetish.com`,
-  siteUrl: `https://scottbolinger.com`,
+  siteUrl: `https://urbanfetish.com`,
   dynamicComments: true,
   gaTrackingId: '',
   mailChimpEndpoint: '',
