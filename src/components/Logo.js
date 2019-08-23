@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import siteLogo from 'https://urbanfetish.com/wp-content/uploads/sites/26/2019/05/cropped-urban-fetish-logo-pink-menu.png';
+import siteLogo from '../images/site-logo.png';
 
 const Logo = ( { data } ) => {
 
