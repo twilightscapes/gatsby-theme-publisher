@@ -7,6 +7,7 @@ const Header = () => {
   const { title } = useSiteMetadata()
 
   return (
+    <section id="section-header">
     <header
       id="masthead"
       className="mb-8 w-full clearfix bg-gray-900"
@@ -29,6 +30,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </section>
   )
 }
 
