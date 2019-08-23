@@ -1,3 +1,10 @@
 @import 'navigation.scss';
 @import 'typography.scss';
-body{background-color:#333 !important;}
+body{background-color:#fff !important; margin: 0; padding:0; padding-top:100px;}
+#masthead{ position:fixed; z-index: 1; top:0; background:linear-gradient(#100000 0%, #666 100%); padding-left:2em; width:100%;}
+#masthead img{width:auto !important; height:auto !important; max-height: 80px;}
+#masthead nav{}
+
+#masthead div div div {display: flex;flex-direction: row; justify-content: space-between; align-items: center;}
+
+#masthead div div div div div{position:absolute; right:3em;}
