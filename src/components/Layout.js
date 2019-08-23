@@ -8,9 +8,7 @@ import "../css/index.scss"
 const Layout = ({ children }) => (
 
     <Header />
-   <section id="section-main">
   <div className="site-content max-w-6xl m-auto p-8 pt-2">{children}</div>
-  </section>
     <Footer />
 
 );
