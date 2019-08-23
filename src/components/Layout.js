@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 import "../css/index.scss"
 
 const Layout = ({ children }) => (
-
+  <div>
     <Header />
-  <div className="site-content max-w-6xl m-auto p-8 pt-2">{children}</div>
+    <div className="site-content max-w-6xl m-auto p-8 pt-2">{children}</div>
     <Footer />
-
+  </div>
 );
 
 Layout.propTypes = {
