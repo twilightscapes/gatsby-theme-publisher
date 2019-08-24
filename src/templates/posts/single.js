@@ -60,7 +60,9 @@ const Post = ({ pageContext: post }) => {
         />
         <footer className="entry-footer max-w-2xl m-auto">
           <BlogOptin />
+          <div>Tags:</div>
           <div className="entry-footer__taxonomy justify-end self-center items-center">
+          
             {post.categories.nodes.length || post.tags.nodes.length
               ? renderTerms(post.categories.nodes, post.tags.nodes)
               : null}

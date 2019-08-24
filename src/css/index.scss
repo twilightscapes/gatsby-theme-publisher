@@ -5,7 +5,7 @@ body{background-color:#fff; margin: 0; padding:0; padding-top:60px; font-family:
 #site-header{ position:fixed; z-index: 1; top:0; background:linear-gradient(#100000 0%, #666 100%);}
 
 #site-header img{width:auto !important; height:auto !important; max-height: 60px;}
-.site-logo{margin-left: 1rem;}
+.site-logo{margin-left: 2rem;}
 .mainmenu{margin-right:1rem; text-transform: uppercase; font-weight: bold;}
 .mainmenu span{display:none;}
 #site-header{display: flex; justify-content: space-between; align-items: center;}
@@ -21,10 +21,13 @@ body{background-color:#fff; margin: 0; padding:0; padding-top:60px; font-family:
 main{padding:0 1rem 0 1rem;}
 .site-footer{background-color:#333; padding:1rem;}
 
-.next-post-featured-image{max-height: 60px;}
 
-.post-wrapper{padding:0 1em}
 
+.post-wrapper{padding:0 2em}
+.entry-meta{display: none;}
+
+
+.entry-footer .mb-8{display:none;}
 
 
 .gatsby-image-wrapper img{
@@ -35,6 +38,33 @@ display: flex;
 -o-object-fit: cover; object-fit: cover; background-size: cover;
 }
 
+
+.next-post-featured-image{max-height: 200px;}
+
+.taxonomy-links{display:flex; flex-flow: wrap;}
+.taxonomy-links a{background-color:#fff; text-decoration: none; padding: .3rem .5rem; margin:.5rem .5rem 1rem 0;}
+
+.entry-footer__taxonomy{margin:0 0; display: flex; flex-flow: wrap;}
+.entry-footer__taxonomy span:first-child{display:none;}
+
+// .tag-label{margin-right:2rem;}
+.engage-container{display: flex; justify-content: space-between; align-items: top;}
+.share-flex{justify-content:space-between;}
+
+.rounded {
+border-radius: 0.25rem;
+}
+
+
+.comment-respond {display: flex; justify-content: center; align-self: center; flex-direction: column; width: 60%; padding:1rem; text-align: center;}
+.comment-respond  input, text-area{
+	flex-wrap: wrap;
+	padding: 0.5rem 0.75rem;
+	width:90%;
+
+}
+
+.comment-form label{margin-left:1rem; text-align: left; float: left;}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -52,7 +82,7 @@ display: flex;
 #section-aside{order:3; width:15%; vertical-align: top; padding-top:2rem;}
 #section-footer{order:4; width:100%;}
 .mainmenu{text-align: center;}
-.mainmenu span{font-size:40%;}
+.mainmenu span{font-size:80%;}
 #site-header{position:fixed; z-index:1; top:0; align-items: center; }
 
 	

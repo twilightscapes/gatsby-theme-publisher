@@ -32,7 +32,7 @@ const NextPost = ({ post }) => (
       const nextPost = findNextPost(post, data)
 
       return (
-        <div className="flex items-center justify-end relative w-3/4">
+        <div className="share-flex items-center justify-end relative w-3/4">
           {nextPost && nextPost.featuredImage && (
             <div className="thumbnail mr-2">
               
@@ -43,7 +43,7 @@ const NextPost = ({ post }) => (
             {nextPost && (
               <>
                 <p className="mb-1 text-sm text-gray-600">
-                  Up Next
+                  Next Post
                 </p>
 
                 <Link

@@ -46,7 +46,7 @@ class CommentForm extends Component {
 	renderCommentNotes() {
 		return (
 			<p className="comment-notes text-sm text-gray-600">
-				<span id="email-notes">Your email address will not be published.</span> Required fields are marked{' '}
+				<span id="email-notes">Your email address will not be published.</span><br />Required fields are marked{' '}
 				<span className="required">*</span>
 			</p>
 		);

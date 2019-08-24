@@ -9,7 +9,7 @@ const config = {
   description: `Urban Fetish`,
   author: `Urban Fetish`,
   twitter: `toddlambert`,
-  wordPressUrl: `https://urbanfetish.com`,
+  wordPressUrl: `https://launchlamp.com/urbanfetish`,
   siteUrl: `https://urbanfetish.com`,
   dynamicComments: true,
   gaTrackingId: '',

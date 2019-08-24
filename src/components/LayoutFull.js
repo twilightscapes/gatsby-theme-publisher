@@ -10,7 +10,7 @@ import "../css/index.scss"
 const LayoutFull = ({ children }) => (
   <section id="root">
     <Header />
-    <main id="section-main" style={{width: '100%', padding:'0'}}>{children}</main>
+    <main id="section-main" className="full" style={{width: '100%', padding:'0'}}>{children}</main>
     <Footer />
   </section>
 );

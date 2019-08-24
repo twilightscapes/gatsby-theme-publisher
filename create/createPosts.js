@@ -77,7 +77,7 @@ let pageNumber = 0
  *
  * @var  {number}
  */
-const itemsPerPage = 10
+const itemsPerPage = 5
 
 /**
  * This is the export which Gatbsy will use to process.
