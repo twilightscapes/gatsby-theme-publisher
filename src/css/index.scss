@@ -14,8 +14,8 @@ body{background-color:#fff; margin: 0; padding:0; padding-top:60px; font-family:
 
 #root{display: flex; flex-wrap: wrap;}
 #site-header{order:1; width:100%;}
-#section-main{order:2; width:75%; vertical-align: top;}
-#section-aside{order:3; width:15%; vertical-align: top; padding-top:2rem;}
+#section-main{order:2; width:100%; vertical-align: top;}
+#section-aside{order:3; width:15%; vertical-align: top; padding-top:2rem; display: none;}
 #section-footer{order:4; width:100%;}
 
 main{padding:0 1rem 0 1rem;}
@@ -55,6 +55,8 @@ display: flex;
 border-radius: 0.25rem;
 }
 
+
+p.link-more{display: none;}
 
 .comment-respond {display: flex; justify-content: center; align-self: center; flex-direction: column; width: 60%; padding:1rem; text-align: center;}
 .comment-respond  input, text-area{
