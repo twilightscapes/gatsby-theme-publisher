@@ -12,7 +12,7 @@ const config = {
   wordPressUrl: `https://launchlamp.com/urbanfetish`,
   siteUrl: `https://urbanfetish.com`,
   dynamicComments: true,
-  gaTrackingId: 'UA-49869143-1',
+  gaTrackingId: 'UA-140479230-1',
   mailChimpEndpoint: '',
 }
 
