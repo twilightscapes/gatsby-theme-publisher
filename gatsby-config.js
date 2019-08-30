@@ -44,6 +44,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
+//     `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
