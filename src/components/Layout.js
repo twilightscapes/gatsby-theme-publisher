@@ -23,6 +23,3 @@ Layout.propTypes = {
 export default Layout;
 
 
-
-// -> document.body.className === "helloworld"
-
