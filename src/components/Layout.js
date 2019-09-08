@@ -3,6 +3,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import PropTypes from 'prop-types';
+import Headroom from "react-headroom"
 // import "../css/tailwind-customizations.css"
 import "../css/index.scss"
 

@@ -2,6 +2,8 @@ import React from "react"
 import Menu from "./Menu"
 import Logo from "./Logo"
 import useSiteMetadata from "../hooks/use-site-metadata"
+import Headroom from "react-headroom"
+
 
 const Header = () => {
   const { title } = useSiteMetadata()
@@ -11,7 +13,7 @@ const Header = () => {
       id="site-header"
       className="mb-8 w-full clearfix bg-gray-900"
       role="banner"
-    >
+    ><Headroom>
 
               <div className="site-logo"><Logo data={title} /></div>
 
@@ -22,7 +24,7 @@ const Header = () => {
             
               <div className="mainmenu"><Menu /><span style={{color:'#fff'}}>MENU</span></div>
 
-    </header>
+    </Headroom></header>
     
   )
 }
