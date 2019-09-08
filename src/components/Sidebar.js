@@ -14,11 +14,11 @@ export default () => (
     <br />
     <br />
      <Sidebar
-    twButton="./src/images/twilightscapes-button.jpg"
+    twButton="/static/twilightscapes-button.jpg"
     />
     <br />
     <Sidebar
-    twButton="./src/images/yearofnight-button.jpg"
+    twButton="/static/yearofnight-button.jpg"
     />
   
 
