@@ -1,7 +1,7 @@
 import React from 'react';
 import twButton from '../images/twilightscapes-button.jpg';
 import yonButton from '../images/yearofnight-button.jpg';
-
+import tleButton from '../images/tle-button.jpg';
 
 
 
@@ -12,7 +12,9 @@ export default () => (
     <p>Visit other sites by Todd Lambert:</p>
 
   
-
+  <a href="https://toddlambert.com/"><img src={tleButton} alt="Todd Lambert Web development for photographers" /></a>
+  <br />
+  <br />
     <a href="https://twilightscapes.com"><img src={twButton} alt="Twilightscapes" /></a>
 
   <br />
