@@ -22,7 +22,7 @@ const BlogArchive = props => {
       
       <div className="max-w-2xl m-auto xl:max-w-5xl blog-page">
 
-      <HeaderArchive name={'Blog'} />
+      <HeaderArchive name={'Latest Additions'} />
 
         {nodes && nodes.map(post => <PostEntry classes="mb-12" key={post.postId} post={post} />)}
         <Pagination
