@@ -30,6 +30,8 @@
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-mailchimp": "^5.1.2",
+    "gatsby-plugin-manifest": "^2.2.15",
+    "gatsby-plugin-offline": "^3.0.4",
     "gatsby-plugin-page-transitions": "^1.0.8",
     "gatsby-plugin-postcss": "^2.1.2",
     "gatsby-plugin-sass": "^2.1.4",
@@ -50,6 +52,7 @@
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.7.0",
+    "screenfull": "^4.2.1",
     "smooth-scroll": "^16.1.0",
     "tailwindcss": "^1.0.5"
   }

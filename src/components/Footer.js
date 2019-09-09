@@ -5,7 +5,14 @@ const Footer = () => {
   const { author } = useSiteMetadata()
   return (
     <footer id="section-footer" className="site-footer">
-     Copyright ®2019 Urban Fetish
+     <p>Copyright © {new Date().getFullYear()} Todd Lambert
+     
+     <br /> Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </p>
+
+    
     </footer>
   )
 }

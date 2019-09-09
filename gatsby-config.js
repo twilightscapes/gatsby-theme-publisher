@@ -22,6 +22,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `urbanfetish.com`,
+        short_name: `UrbanFetish`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#FAE042`,
+        display: `standalone`,
+        icon: `src/images/site-logo.png`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: config.gaTrackingId,
@@ -38,6 +50,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
 //     `gatsby-plugin-transition-link`,
 	'gatsby-plugin-page-transitions',
     {
