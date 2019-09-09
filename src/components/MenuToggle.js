@@ -2,10 +2,11 @@ import React from 'react';
 
 const MenuToggle = ({ onClick }) => (
   <button
-  	id="Menu"
+  	id="text"
     className="menu-toggle"
     aria-controls="top-menu"
     aria-expanded="false"
+    aria-label="Bold text icon"
     onClick={onClick}
   >
 
