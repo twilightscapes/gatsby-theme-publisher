@@ -115,10 +115,10 @@ p.link-more{display: none;}
 @media screen and (max-width: 790px) {
 	
 #content-layout{display: block;}
-#site-header{order:1; width:auto;}
+#site-header{order:1; width:100%;}
 #section-main{order:2; width:auto; vertical-align: top; padding:3rem 1rem 0 1rem;}
 #section-aside{order:3; width:auto; vertical-align: top; padding:1rem;}
-#section-footer{order:4; width:auto;}
+#section-footer{order:4; width:100%;}
 
 
 .mainmenu{text-align: center;}

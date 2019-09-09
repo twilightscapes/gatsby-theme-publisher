@@ -15,7 +15,7 @@ const BlogArchive = props => {
     <Layout>
 
       <SEO
-        title="Posts"
+        title="Latest Additions"
         description="Blog posts"
         keywords={[`wordpress`]}
       />

@@ -15,7 +15,7 @@ const SingleTag = props => {
         title={`Tag - ${name}`}
         description={`A collection of posts from the ${name} tag.`}
       />
-      <HeaderArchive name={name} />
+      <HeaderArchive name={"Tag: " + name} />
 
       {posts.nodes &&
         posts.nodes.map(post => {
