@@ -12,7 +12,7 @@ export default () => (
     <p>Visit other sites by Todd Lambert:</p>
 
   
-  <a href="https://toddlambert.com/"><img src={tleButton} alt="Todd Lambert Web development for photographers" /></a>
+  <a href="https://toddlambert.com/">< img src={tleButton} alt="Todd Lambert Web development for photographers" /></a>
   <br />
   <br />
     <a href="https://twilightscapes.com"><img src={twButton} alt="Twilightscapes" /></a>

@@ -2,17 +2,38 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import PropTypes from 'prop-types';
-import "../css/index.scss"
-
+import "../css/index.scss";
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 
 const LayoutFull = ({ children }) => (
-  <section id="root">
+	
+<>
     <Header />
-    <main id="section-main" className="full" style={{width: '100%'}}>{children}</main>
+    
+<PageTransition
+	defaultStyle={{
+      transition: 'top 500ms cubic-bezier(0.47, 0, 0.75, 0.72)',
+      top: '100%',
+      position: 'absolute',
+      width: '100%',
+    }}
+    transitionStyles={{
+      entering: { top: '0%' },
+      entered: { top: '0%' },
+      exiting: { bottom: '100%' },
+    }}
+    transitionTime={300}>
+    
+    <div id="content-layout-full">
+    <main id="section-main">{children}</main>
+    </div>
     <Footer />
-
-  </section>
+    </PageTransition>
+  
+    
+</>
+  
 );
 
 

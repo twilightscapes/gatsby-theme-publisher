@@ -11,12 +11,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require("tailwindcss")],
-      },
-    },
-    {
       resolve: `gatsby-source-graphql`,
       options: {
         // This type will contain remote schema Query type
@@ -45,6 +39,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
 //     `gatsby-plugin-transition-link`,
+	'gatsby-plugin-page-transitions',
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -53,11 +48,6 @@ module.exports = {
         },
       },
     },
-//     {
-//       resolve: "gatsby-plugin-mailchimp",
-//       options: {
-//         endpoint: config.mailChimpEndpoint,
-//       },
-//     },
+
   ],
 }
