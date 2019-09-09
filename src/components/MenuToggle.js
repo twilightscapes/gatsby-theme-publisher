@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuToggle = ({ onClick }) => (
   <button
-  	name="Menu"
+  	id="Menu"
     className="menu-toggle"
     aria-controls="top-menu"
     aria-expanded="false"
