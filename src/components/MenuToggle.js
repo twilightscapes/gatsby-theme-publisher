@@ -9,7 +9,7 @@ const MenuToggle = ({ onClick }) => (
     onClick={onClick}
   >
 
-    <span className="screen-reader-text">Menu</span>
+    <span id="Site Menu" className="screen-reader-text">Menu</span>
   </button>
   
 );
