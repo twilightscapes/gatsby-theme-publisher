@@ -35,7 +35,16 @@ const NextPost = ({ post }) => (
         <div className="share-flex items-center justify-end relative w-3/4">
           {nextPost && nextPost.featuredImage && (
             <div className="thumbnail mr-2">
-              
+              <Link
+                  to={`/${nextPost.uri}`}
+                  rel="bookmark"
+                  title={nextPost.title}
+                >
+                <img		
+                 src={nextPost.featuredImage.sourceUrl}		
+                alt={nextPost.title}		
+                className="next-post-featured-image block w-12 mr-2"		
+              /></Link>
             </div>
           )}
 
