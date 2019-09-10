@@ -51,7 +51,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
-//     `gatsby-plugin-transition-link`,
 	'gatsby-plugin-page-transitions',
 
 
