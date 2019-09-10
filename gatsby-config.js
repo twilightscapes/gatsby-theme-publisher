@@ -53,14 +53,7 @@ module.exports = {
     `gatsby-plugin-offline`,
 //     `gatsby-plugin-transition-link`,
 	'gatsby-plugin-page-transitions',
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Lato"],
-        },
-      },
-    },
+
 
   ],
 }
