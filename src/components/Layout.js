@@ -5,6 +5,8 @@ import Footer from './Footer';
 import PropTypes from 'prop-types';
 import "../css/index.scss";
 import PageTransition from 'gatsby-plugin-page-transitions';
+import 'typeface-lato';
+
 
 
 

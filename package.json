@@ -54,6 +54,7 @@
     "react-icons": "^3.7.0",
     "screenfull": "^4.2.1",
     "smooth-scroll": "^16.1.0",
-    "tailwindcss": "^1.0.5"
+    "tailwindcss": "^1.0.5",
+    "typeface-lato": "0.0.75"
   }
 }
