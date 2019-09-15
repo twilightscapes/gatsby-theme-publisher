@@ -308,6 +308,10 @@ body {
 .mainmenu span {
   display: none; }
 
+.inner {
+  padding: 2em;
+  text-align: center; }
+
 #content-layout {
   display: flex;
   flex-direction: row;
