@@ -30,7 +30,7 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/images/site-logo.png`,
+        icon: `src/images/urban-fetish-icon.png`,
       },
     },
     {
