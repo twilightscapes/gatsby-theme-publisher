@@ -3,8 +3,8 @@ import { Link, StaticQuery, graphql } from 'gatsby';
 import { createLocalLink } from '../utils';
 import { BodyClass } from 'react-extras';
 import MenuToggle from './MenuToggle';
-import { FaSearch } from 'react-icons/fa';
-import { navigate } from '@reach/router';
+// import { FaSearch } from 'react-icons/fa';
+// import { navigate } from '@reach/router';
 
 const MENU_QUERY = graphql`
   fragment MenuFields on WPGraphQL_MenuItem {
@@ -68,7 +68,7 @@ const renderSubMenu = menuItem => {
 
 const Menu = ({ location }) => {
   const navRef = useRef();
-  const searchBar = useRef();
+//   const searchBar = useRef();
   const [navOpen, setNavOpen] = useState(false);
 
   const openNav = () => {
@@ -77,6 +77,7 @@ const Menu = ({ location }) => {
     navOpen ? setNavOpen(false) : setNavOpen(true);
   };
 
+/*
   const clickSearch = () => {
     searchBar.current.classList.toggle('show-search');
     setTimeout( () => {
@@ -89,6 +90,7 @@ const Menu = ({ location }) => {
     console.log(e.target.value)
     navigate('about#some-link');
   }
+*/
   
   return (
     <StaticQuery

@@ -14,6 +14,7 @@ const config = {
   dynamicComments: true,
   gaTrackingId: 'UA-140479230-1',
   mailChimpEndpoint: '',
+  image: `src/images/urban-fetish-button.jpg`,
 }
 
 module.exports = config

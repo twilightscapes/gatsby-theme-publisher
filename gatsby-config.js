@@ -8,6 +8,7 @@ module.exports = {
     author: config.author,
     twitter: config.twitter,
     siteUrl: config.siteUrl,
+    image: config.image,
   },
   plugins: [
     {
