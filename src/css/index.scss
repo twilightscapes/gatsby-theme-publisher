@@ -44,6 +44,22 @@ body{background-color:#fff; margin: 0; padding:60; font-family: Lato;}
 
 #content-layout-full #section-main{width:auto; display: block;}
 
+.grid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.grid article{ height: 400px;
+  flex-basis: 33%;
+  -ms-flex: auto;
+  width: 33%;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;}
 
 
 
@@ -127,5 +143,15 @@ p.link-more{display: none;}
 .mainmenu span{font-size:80%;}
 #site-header{z-index:1; top:0; align-items: center; }
 
+.grid{
+	display: block;
+
+}
+
+.grid article{ height: auto;
+  width: auto;
+  position: relative;
+  padding: 10px;
+}
 	
 } // END MOBILE

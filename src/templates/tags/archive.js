@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import LayoutFull from '../../components/LayoutFull';
 import PostEntry from '../../components/PostEntry';
 import HeaderArchive from '../../components/HeaderArchive';
 import SEO from '../../components/SEO';
@@ -10,18 +10,18 @@ const SingleTag = props => {
   } = props;
 
   return (
-    <Layout>
+    <LayoutFull>
       <SEO
         title={`Tag - ${name}`}
         description={`A collection of posts from the ${name} tag.`}
       />
       <HeaderArchive name={"Tag: " + name} />
-
+	  <div className="grid">
       {posts.nodes &&
         posts.nodes.map(post => {
           return <PostEntry key={post.id} post={post} />;
-        })}
-    </Layout>
+        })}</div>
+    </LayoutFull>
   );
 };
 
