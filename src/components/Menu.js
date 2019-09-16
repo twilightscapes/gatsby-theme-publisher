@@ -51,6 +51,7 @@ const renderMenuItem = menuItem => {
       <li className="menu-item text-gray-800 text-white" key={menuItem.id}>
         {renderLink(menuItem)}
       </li>
+      
     );
   }
 };
@@ -125,6 +126,7 @@ const Menu = ({ location }) => {
                       return renderMenuItem(menuItem);
                     }
                   })}
+                  <li><Link to="/contact/">Contact</Link></li>
                 </ul>
               </div>
             </nav>
