@@ -51,7 +51,7 @@ const Post = ({ pageContext: post }) => {
     {post.featuredImage && <PostEntryMedia post={post} location="single" classes="mb-20" />}
       <SEO title={`${post.title}`} />
       <Helmet>
-          <meta property="og:image" content="http://localhost:8000/static/site-logo-edae112d2007dd3641c1bf24e3202cc9.png" data-react-helmet="true" />
+          <meta property="og:image" content="https://urbanfetish.com/static/e1dfe299fa2cbf3d8b30ba1fc8e8e468/16981/urban-fetish-button.jpg" data-react-helmet="true" />
 	</Helmet>
       <div className="post-wrapper single-post">
         <header className="entry-header max-w-2xl m-auto mb-6 mt-8">
