@@ -1,10 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
-
+import { Helmet } from "react-helmet";
 
 const Contact = (props) => (
 	<Layout>
 
+<Helmet>
+          <meta charSet="utf-8" />
+          <title>Contact Us | Urban Fetish - Abandoned Urbex Urban Exploration Photos and Locations</title>
+	  </Helmet>
+	  
+	  
         <div className="inner">
             <section>
                 <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">

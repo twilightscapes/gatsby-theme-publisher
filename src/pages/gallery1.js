@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import LayoutFull from '../components/LayoutFull';
+import { Helmet } from "react-helmet";
 // import { photos } from "../../components/photos";
 
 
@@ -35,8 +36,14 @@ const [currentImage, setCurrentImage] = useState(0);
   
 
   return (
+	  
     <LayoutFull>
-      
+    
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Gallery 1 | Urban Fetish - Abandoned Urbex Urban Exploration Photos and Locations</title>
+	  </Helmet>
+        
       <h1>Gallery 1</h1>
   
     <Gallery photos={photos} onClick={openLightbox} />

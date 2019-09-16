@@ -5,7 +5,7 @@
  * mailChimpEndpoint see https://github.com/benjaminhoffman/gatsby-plugin-mailchimp#mailchimp-endpoint
  */
 const config = {
-  title: `Urban Fetish`,
+  title: `Urban Fetish - Abandoned Urbex Urban Exploration Photos and Locations`,
   description: `Urban Fetish`,
   author: `Urban Fetish`,
   twitter: `toddlambert`,
