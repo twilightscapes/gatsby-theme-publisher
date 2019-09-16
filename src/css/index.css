@@ -281,6 +281,10 @@ body {
 .headroom--unpinned {
   transform: translateY(-100%); }
 
+#site-navigation [aria-current] {
+  background-color: #cc33ff;
+  padding: .5rem; }
+
 #section-main {
   padding: 48px 0 0 0; }
 

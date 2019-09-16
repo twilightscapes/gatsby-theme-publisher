@@ -38,7 +38,6 @@
     "gatsby-plugin-sass": "^2.1.4",
     "gatsby-plugin-sharp": "^2.2.12",
     "gatsby-plugin-sitemap": "^2.2.6",
-    "gatsby-plugin-transition-link": "^1.12.4",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-source-graphql": "^2.0.14",
@@ -53,10 +52,9 @@
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.7.0",
+    "react-image": "^2.2.0",
     "react-images": "^1.0.0",
-    "screenfull": "^4.2.1",
-    "smooth-scroll": "^16.1.0",
-    "tailwindcss": "^1.0.5",
+    "react-photo-gallery": "^8.0.0",
     "typeface-lato": "0.0.75"
   }
 }
