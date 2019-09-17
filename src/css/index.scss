@@ -33,6 +33,59 @@ img:not([src*=".svg"]), video {
 [data-theme="dark"] .themer span:before {content: "Light ";}
 */
 
+.themeSlide {
+  width: 80px;
+  height: 26px;
+  background: #333;
+  margin: 0 0 0 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.themeSlide:after {
+  content: 'Light';
+  color: $primary;
+  position: absolute;
+  right: 8px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+}
+.themeSlide:before {
+  content: 'Dark';
+  color: $primary;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+}
+.themeSlide label {
+  display: block;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.themeSlide input[type=checkbox] {
+  visibility: hidden;
+}
+.themeSlide input[type=checkbox]:checked + label {
+  left: 43px;
+}
+
+
+
+
 body.dark{background-color: #333; color:#fff;}
 
 body.dark a {color:$primary;}
@@ -44,11 +97,13 @@ body.light footer{color:#fff;}
 body.light *{border-color:#666 !important;}
 body.dark *{border-color:#999 !important;}
 
+/*
 body.light .themer span:before {content: "Dark ";}
 body.dark .themer span:before {content: "Light ";}
+*/
 
 
-body{background-color:#fff; margin: 0; padding:60; font-family: Lato;}
+body{margin: 0; padding:60; font-family: Lato;}
 
 #site-header{z-index: 1; top:0;}
 
@@ -72,7 +127,7 @@ border-radius: 8px 0 0 0;
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer {display:flex; flex-wrap: nowrap; position:absolute; top:70px; right:20px; font-size: 90%; vertical-align:bottom; background-color:#222; padding:.3rem 1rem; border-radius: 4px; color:#fff;}
+.themer {display:flex; justify-content: center; position:absolute; top:70px; right:20px; font-size: 90%; vertical-align:center; background-color:#222; padding:.3rem 1rem; border-radius: 4px; color:#fff;}
 .themer span{padding-top: 3px;}
 .button-switcher{border:1px solid;}
 

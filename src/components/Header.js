@@ -31,14 +31,14 @@ const Header = () => {
 <a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><FaArrowAltCircleUp /> Back to Top</a>
     <div className="themer"><span>Theme:</span> <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label>
+          <div className="themeSlide">
             <input
-              type="checkbox"
+              type="checkbox" value="None" id="themeSlide" name="check"
               onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               checked={theme === 'dark'}
             />{' '}
             
-          </label>
+          <label htmlFor="themeSlide"></label></div>
         )}
       </ThemeToggler></div></Headroom></header>
     
