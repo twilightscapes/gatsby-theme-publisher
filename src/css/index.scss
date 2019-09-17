@@ -92,7 +92,7 @@ body.light{background-color:#e6e3e3; color:#222;}
 body.dark a {color:$primary;}
 body.light a{color:$primary;}
 
-body.light #section-footer{color:#fff;}
+body.light #section-footer, body.light #section-footer a, body.dark #section-footer a {color:#fff !important;}
 
 
 body.light *{border-color:#666 !important;}
