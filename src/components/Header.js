@@ -28,7 +28,7 @@ const Header = () => {
                     </div> */}
             
               <div className="mainmenu"><Menu /><span style={{color:'#fff'}}>MENU</span></div>
-<a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><FaArrowAltCircleUp /> Back to Top</a>
+<a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><FaArrowAltCircleUp /></a>
     <div className="themer"><span>Theme:</span> <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">

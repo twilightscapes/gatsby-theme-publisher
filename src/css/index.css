@@ -388,6 +388,7 @@ body {
   padding: .3rem;
   z-index: 99999999;
   color: #fff;
+  font-size: 150%;
   font-weight: bold;
   background-color: #fe09f0;
   border-radius: 8px 0 0 0; }
@@ -616,7 +617,8 @@ p.link-more {
   #section-footer {
     order: 4; }
   .mobmenu {
-    display: block; }
+    display: block;
+    color: #fff; }
   .mainmenu {
     text-align: center; }
   .mainmenu span {
