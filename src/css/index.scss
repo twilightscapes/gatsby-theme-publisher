@@ -87,11 +87,12 @@ img:not([src*=".svg"]), video {
 
 
 body.dark{background-color: #333; color:#fff;}
+body.light{background-color:#e6e3e3; color:#222;}
 
 body.dark a {color:$primary;}
 body.light a{color:$primary;}
 
-body.light footer{color:#fff;}
+body.light #section-footer{color:#fff;}
 
 
 body.light *{border-color:#666 !important;}
@@ -128,14 +129,14 @@ border-radius: 8px 0 0 0;
 }
 .headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
 
-.themer {display:flex; justify-content: center; position:absolute; top:70px; right:20px; font-size: 90%; vertical-align:center; background-color:#222; padding:.3rem 1rem; border-radius: 4px; color:#fff;}
+.themer {display:flex; justify-content: center; position:absolute; top:70px; right:20px; font-size: 90%; vertical-align:center; background-color:#222; padding:.3rem 1rem; border-radius: 4px; color:#fff; box-shadow: 0px 0px 1px 1px black;}
 .themer span{padding-top: 3px;}
 .button-switcher{border:1px solid;}
 
 
 .headroom--unpinned .themer{display: none;}
 
-.headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ background:linear-gradient(#100000 0%, #666 100%);  height:auto;}
+.headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ background:linear-gradient(#343435 0%, #131212 100%); height:auto; box-shadow: 0px 0px 4px 1px black;}
 
 #site-header img{width:auto !important; height:auto !important; max-height: 60px;}
 .site-logo{margin-left: 2rem;}
@@ -175,13 +176,14 @@ padding:.5rem;
   width: 33%;
   position: relative;
   padding: 10px;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+  }
 
 
 
 
 main{padding:0 1rem 0 1rem;}
-.site-footer{background-color:#333; padding:1rem;}
+.site-footer{background-image:linear-gradient(#1d1d1e 0%, #3b3a3a 100%); padding:1rem; border-top:2px solid; box-shadow: 0px 0px 4px 1px black;}
 
 #section-aside img, article picture img{max-width: 100%; border-radius: 4px;}
 
@@ -206,6 +208,8 @@ display: flex;
 	margin: auto;
 -o-object-fit: cover; object-fit: cover; background-size: cover;
 }
+
+.gatsby-image-wrapper{ box-shadow: 0px 0px 2px 1px black; border-radius: 4px;}
 
 
 .next-post-featured-image{max-height: 100px;}
