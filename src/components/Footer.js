@@ -9,7 +9,7 @@ const Footer = () => {
      
      <br /> Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="#site-header">Gatsby</a>
       </p>
 
     

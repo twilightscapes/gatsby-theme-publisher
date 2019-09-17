@@ -3,6 +3,37 @@
 // 
 @import 'navigation.scss';
 @import 'typography.scss';
+$primary: #fe09f0;
+
+/*
+:root { 
+   background-color: #fefefe;
+   filter: invert(100%);
+}
+
+* { 
+   background-color: inherit;
+}
+
+img:not([src*=".svg"]), video {  
+   filter: invert(100%);
+}
+*/
+
+[data-theme="dark"] a {color:$primary;}
+[data-theme="light"] a{color:$primary;}
+
+[data-theme="light"] footer{color:#fff;}
+
+[data-theme="light"] *{border-color:#666 !important;}
+[data-theme="dark"] *{border-color:#999 !important;}
+
+[data-theme="light"] .themer span:before {content: "Dark ";}
+[data-theme="dark"] .themer span:before {content: "Light ";}
+
+
+
+// .darkColor{background-color: #fe09f0; color:#ff0000;}
 body{background-color:#fff; margin: 0; padding:60; font-family: Lato;}
 
 #site-header{z-index: 1; top:0;}
@@ -18,16 +49,20 @@ body{background-color:#fff; margin: 0; padding:60; font-family: Lato;}
   transform: translateY(-100%);
 }
 
-#site-navigation [aria-current] {
-background-color: #cc33ff;
-padding:.5rem;
+.headroom--unpinned .back-to-top{display: block; position:fixed; bottom:0; right:0; border:1px solid; transform: translateY(100vh); padding:.3rem;
+z-index: 99999999;
+color: #fff;
+font-weight: bold;
+background-color:$primary;
+border-radius: 8px 0 0 0;
 }
+.headroom--unfixed .back-to-top, .headroom--pinned .back-to-top{display: none;}
+
+.themer {display:flex; flex-wrap: nowrap; position:absolute; top:70px; right:20px; font-size: 90%; vertical-align:bottom;}
+.themer span{padding-top: 3px;}
 
 
-
-#section-main{padding:48px 0 0 0;}
-
-// .headroom-wrapper{width:100%;}
+.headroom--unpinned .themer{display: none;}
 
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ background:linear-gradient(#100000 0%, #666 100%);  height:auto;}
 
@@ -36,18 +71,20 @@ padding:.5rem;
 .mainmenu{margin-right:1rem; text-transform: uppercase; font-weight: bold;}
 .mainmenu span{display:none;}
 
+#site-navigation [aria-current] {
+background-color: $primary;
+padding:.5rem;
+}
 
-// #site-header div div {position:absolute; right:3em;}
-
-#gatsby-focus-wrapper{}
+.mobmenu{display: none;}
 
 .inner{padding:2em; text-align: center;}
 
 #content-layout{display: flex; flex-direction: row; justify-content: flex-start;}
 
 #site-header{order:1; width:auto;}
-#section-main{order:2; width:70%; vertical-align: top; padding: 4rem 2rem;}
-#section-aside{order:3; width:30%; vertical-align: top; padding:4rem 2rem 2rem 0}
+#section-main{order:2; width:70%; vertical-align: top; padding: 4.5rem 2rem;}
+#section-aside{order:3; width:30%; vertical-align: top; padding:4rem 2rem 2rem 0; margin-top:2rem;}
 #section-footer{order:4; width:auto; align-content: center;/*  position:fixed; bottom:0; */}
 
 #content-layout-full #section-main{width:auto; display: block;}
@@ -75,7 +112,9 @@ padding:.5rem;
 main{padding:0 1rem 0 1rem;}
 .site-footer{background-color:#333; padding:1rem;}
 
-#section-aside img, article picture img{max-width: 100%; border-radius: 10px; border:1px solid #222;}
+#section-aside img, article picture img{max-width: 100%; border-radius: 10px; border:1px solid;}
+
+p.sidebarp{font-size: 80%; margin-bottom: 2rem;}
 
 .pagination{font-size:150%;}
 
@@ -101,7 +140,7 @@ display: flex;
 .next-post-featured-image{max-height: 100px;}
 
 .taxonomy-links{display:flex; flex-flow: wrap;}
-.taxonomy-links a{background-color:#fff; text-decoration: none; padding: .3rem .5rem; margin:.5rem .5rem 1rem 0;}
+.taxonomy-links a{background-color:#e9eaef; text-decoration: none; padding: .3rem .5rem; margin:.5rem .5rem 1rem 0;}
 
 .entry-footer__taxonomy{margin:0 0; display: flex; flex-flow: wrap;}
 .entry-footer__taxonomy span:first-child{display:none;}
@@ -127,6 +166,7 @@ p.link-more{display: none;}
 
 .comment-form label{margin-left:1rem; text-align: left; float: left;}
 
+/*
 @media (prefers-color-scheme: dark) {
   body {
     color: #ddd;
@@ -135,6 +175,7 @@ p.link-more{display: none;}
   a {color:#fff;}
   .taxonomy-links a{background-color:#9b9898; color:#333;}
 }
+*/
 
 
 
@@ -142,10 +183,10 @@ p.link-more{display: none;}
 	
 #content-layout{display: block;}
 #site-header{order:1; display:block;}
-#section-main{order:2; width:auto; vertical-align: top; padding:3rem 1rem 0 1rem;}
+#section-main{order:2; width:auto; vertical-align: top; padding:4.5rem 1rem 0 1rem;}
 #section-aside{order:3; width:auto; vertical-align: top; padding:1rem;}
 #section-footer{order:4;}
-
+.mobmenu{display: block;}
 
 .mainmenu{text-align: center;}
 .mainmenu span{font-size:80%;}

@@ -64,7 +64,7 @@ const Post = ({ pageContext: post }) => {
           <PostEntryMeta post={post} />
         </header>
         
-
+<br /><br />
         <div
           className="entry-content max-w-2xl m-auto"
           dangerouslySetInnerHTML={syntaxHighlighter(post.content)}

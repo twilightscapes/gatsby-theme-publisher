@@ -6,6 +6,12 @@ import "../css/index.scss";
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const LayoutFull = ({ children }) => (
 	
 <>

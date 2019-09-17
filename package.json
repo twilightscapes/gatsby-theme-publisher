@@ -55,6 +55,8 @@
     "react-image": "^2.2.0",
     "react-images": "^1.0.0",
     "react-photo-gallery": "^8.0.0",
+    "react-theme-switcher": "^1.1.1",
+    "smooth-scroll": "^16.1.0",
     "typeface-lato": "0.0.75"
   }
 }

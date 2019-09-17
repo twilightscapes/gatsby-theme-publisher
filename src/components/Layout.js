@@ -9,7 +9,10 @@ import 'typeface-lato';
 
 
 
-
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const Layout = ({ children }) => (
 	
@@ -34,7 +37,9 @@ const Layout = ({ children }) => (
     <main id="section-main">{children}</main>
     <Sidebar />
     </div>
+    
     <Footer />
+    
     </PageTransition>
   
     

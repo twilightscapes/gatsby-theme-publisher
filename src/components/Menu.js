@@ -107,7 +107,7 @@ const Menu = ({ location }) => {
               ref={navRef}
             >
             
-              <MenuToggle onClick={openNav} />
+              <div className="mobmenu">MENU</div><MenuToggle onClick={openNav} />
 
               {navOpen && <BodyClass add="nav-open" />}
               <div className="menu-primary-container hidden sm:block">

@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from "gatsby"
 
-const LinkTop = () => (
-  <Link to="/#site-header">Scroll UP</Link>
-)
+const LinkTop = () => {
+
+  return (
+	  
+<Link to="/#site-header" className="back-to-top2">Up</Link>
+
+  )
+}
+
+export default LinkTop
