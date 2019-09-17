@@ -3,8 +3,9 @@ import Menu from "./Menu"
 import Logo from "./Logo"
 import useSiteMetadata from "../hooks/use-site-metadata"
 import Headroom from "react-headroom"
-import { FaArrowAltCircleUp } from 'react-icons/fa';
+// import { FaArrowAltCircleUp } from 'react-icons/fa';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import Image from './Image';
 
 const Header = () => {
   const { title } = useSiteMetadata()
@@ -28,7 +29,7 @@ const Header = () => {
                     </div> */}
             
               <div className="mainmenu"><Menu /><span style={{color:'#fff'}}>MENU</span></div>
-<a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><FaArrowAltCircleUp /></a>
+<a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><Image filename="up-arrow.png" alt="up-arrow" width="30" height="30" /></a>
     <div className="themer"><span>Theme:</span> <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">
