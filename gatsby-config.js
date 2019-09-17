@@ -40,12 +40,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-emotion`,
-      options: {
-        // Accepts all options defined by `babel-plugin-emotion` plugin.
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -58,6 +52,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
 	'gatsby-plugin-page-transitions',
+	`gatsby-plugin-dark-mode`,
 
 
   ],

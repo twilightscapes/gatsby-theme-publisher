@@ -4,14 +4,10 @@ import Logo from "./Logo"
 import useSiteMetadata from "../hooks/use-site-metadata"
 import Headroom from "react-headroom"
 import { FaArrowAltCircleUp } from 'react-icons/fa';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import ThemeSwitcher from "react-theme-switcher";
 
 const Header = () => {
   const { title } = useSiteMetadata()
-  
-  
-
-
 
   return (
     <header
@@ -29,22 +25,16 @@ const Header = () => {
             
               <div className="mainmenu"><Menu /><span style={{color:'#fff'}}>MENU</span></div>
 <a title="Back To Top" href="#site-header" className="back-to-top fa-chevron-circle-up fa-4x shadow"><FaArrowAltCircleUp /> Back to Top</a>
-    <div className="themer"><span>Theme:</span> <ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <label>
-            <input
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />{' '}
-            
-          </label>
-        )}
-      </ThemeToggler></div></Headroom></header>
+    <div className="themer"><span>Theme:</span><ThemeSwitcher
+	cssSelector="body"
+	switcherColor="#fe09f0"
+	darkColor="#282c34"
+	lightColor="#ffffff"
+	lightTextColor="#272b33"
+	darkTextColor="#ffffff"
+/></div></Headroom></header>
     
   )
 }
-
-
 
 export default Header
