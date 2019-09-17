@@ -47,7 +47,7 @@ const Post = ({ pageContext: post }) => {
     
     
 	  
-	  
+	  <br />
     {post.featuredImage && <PostEntryMedia post={post} location="single" classes="mb-20" />}
       <SEO title={`${post.title}`} />
       <Helmet>
@@ -64,7 +64,7 @@ const Post = ({ pageContext: post }) => {
           <PostEntryMeta post={post} />
         </header>
         
-<br /><br />
+
         <div
           className="entry-content max-w-2xl m-auto"
           dangerouslySetInnerHTML={syntaxHighlighter(post.content)}
