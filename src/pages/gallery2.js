@@ -10,9 +10,9 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../components/Gallery'
 
 
-const gal1Query = graphql`
-  query gal1Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
+const gal2Query = graphql`
+  query gal2Query {
+    allFile(filter: { relativeDirectory: { eq: "gallery2" } }) {
       edges {
         node {
           childImageSharp {
@@ -32,8 +32,8 @@ const gal1Query = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(gal1Query)
+const Gal2Page = () => {
+  const data = useStaticQuery(gal2Query)
   return (
     <Layout>
       
@@ -44,4 +44,4 @@ const Gal1Page = () => {
   )
 }
 
-export default Gal1Page
+export default Gal2Page

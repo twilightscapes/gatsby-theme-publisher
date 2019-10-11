@@ -118,7 +118,9 @@ const Menu = ({ location }) => {
                   id="menu-primary"
                   className="primary-menu flex items-center list-none"
                 >
-                <li><Link to="/gallery1/">Gallery</Link></li>
+                <li><Link to="/gallery1/">Gallery 1</Link></li>
+                  <li><Link to="/gallery2/">Gallery 2</Link></li>
+                  <li><Link to="/gallery3/">Gallery 3</Link></li>
                  {/* <li><FaSearch className="text-xs text-white" onClick={clickSearch} /></li> */}
                   {data.wpgraphql.menuItems.nodes.map(menuItem => {
                     if (menuItem.childItems.nodes.length) {
@@ -127,6 +129,7 @@ const Menu = ({ location }) => {
                       return renderMenuItem(menuItem);
                     }
                   })}
+                  
                   <li><Link to="/contact/">Contact</Link></li>
                   
                 </ul>
